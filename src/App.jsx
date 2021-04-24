@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import logo from './logo.svg'
 import cart from './cart.svg'
 import search from './search.svg'
+import down from './chevron-down.svg'
 import './App.css'
 
 function App() {
@@ -12,7 +12,10 @@ function App() {
       <header className="flex py-2 shadow sticky top-0 z-20 bg-white">
         <nav className="flex flex-grow">
           <div className="flex ml-auto font-bold">
-            <a>Demos</a>
+            <a>
+              Demos
+              <img className="inline" src={down} />
+            </a>
             <a className="ml-2">Pages</a>
             <a className="ml-2">Portofolios</a>
           </div>
@@ -27,15 +30,20 @@ function App() {
       <div className="mt-1">
         <div className="relative">
           <img src="https://images.unsplash.com/photo-1564697366559-f2b400ce529a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440q=80" />
-          <div className="absolute inset-0 bg-opacity-30 bg-black text-white flex flex-col">
-            <div>
-              Catering should be an experience
-            </div>
-            <div>
-              We use only the finest and freshest ingredients
-            </div>
-            <div>
-              At Sway catering we know that food is an important part of life. If the meal is not perfect, your event cannot be perfect
+          <div className="absolute inset-0 bg-opacity-30 bg-black text-white flex flex-col items-center">
+            <div className="mt-10 w-1/2">
+              <div className="text-4xl font-dancing">
+                Catering should be an experience
+              </div>
+              <div className="mt-4 text-5xl font-bold">
+                We use only the finest and freshest ingredients
+              </div>
+              <div className="mt-8 text-lg font-bold">
+                At Sway catering we know that food is an important part of life. If the meal is not perfect, your event cannot be perfect
+              </div>
+              <button className="mt-8 bg-green-500 py-2 px-4 rounded-full">
+                Request a quote
+              </button>
             </div>
           </div>
         </div>

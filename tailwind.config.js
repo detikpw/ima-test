@@ -1,5 +1,11 @@
 module.exports = {
-  mode: 'jit',
+  theme: {
+    extend: {
+      fontFamily: {
+        dancing: ["'Dancing Script'", 'cursive']
+      }
+    },
+  },
   purge: {
     enabled: process.env.NODE_ENV === 'production',
     safeList: [],
@@ -10,11 +16,8 @@ module.exports = {
     ],
   },
   darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
   variants: {
-    extend: {},
+    extend: {}
   },
   plugins: [],
 }
