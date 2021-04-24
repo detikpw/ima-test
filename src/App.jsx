@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import cart from './cart.svg'
 import search from './search.svg'
-import down from './chevron-down.svg'
 import './App.css'
+import NavItem from './nav-item';
+import Right from './chevron-right.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,12 +13,9 @@ function App() {
       <header className="flex py-2 shadow sticky top-0 z-20 bg-white">
         <nav className="flex flex-grow">
           <div className="flex ml-auto font-bold">
-            <a>
-              Demos
-              <img className="inline" src={down} />
-            </a>
-            <a className="ml-2">Pages</a>
-            <a className="ml-2">Portofolios</a>
+            <NavItem>Demos</NavItem>
+            <NavItem className="ml-2">Pages</NavItem>
+            <NavItem className="ml-2">Portofolios</NavItem>
           </div>
         </nav>
         <div className="flex-grow" />
@@ -41,8 +39,9 @@ function App() {
               <div className="mt-8 text-lg font-bold">
                 At Sway catering we know that food is an important part of life. If the meal is not perfect, your event cannot be perfect
               </div>
-              <button className="mt-8 bg-green-500 py-2 px-4 rounded-full">
+              <button className="mt-8 bg-green-500 py-2 px-4 rounded-full flex items-center mx-auto">
                 Request a quote
+                <Right />
               </button>
             </div>
           </div>
