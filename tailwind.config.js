@@ -3,6 +3,10 @@ module.exports = {
     extend: {
       fontFamily: {
         dancing: ["'Dancing Script'", 'cursive']
+      },
+      colors: {
+        'alt-1': '#302729',
+        'alt-2': '#362a2e'
       }
     },
   },

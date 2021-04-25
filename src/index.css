@@ -12,6 +12,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-gray-200;
 }
 
 button:focus {outline:0;}
@@ -21,4 +22,14 @@ code {
     monospace;
 }
 
+.portfolio-item {
+  flex: 1 0 auto;
+  height:auto;
+  max-width: 250px;
+}
 
+.portfolio-item:before {
+  content:'';
+  float:left;
+  padding-top:100%;
+}
