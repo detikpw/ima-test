@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App relative">
-      <div className="w-max h-0 ml-auto top-1/4 z-20 right-0 sticky">
+      <aside className="hidden lg:block w-max h-0 ml-auto top-1/4 z-20 right-0 sticky">
         <div className="rounded-l-lg shadow-md bg-white">
           <div className="p-4 border-b-2">
             <FileText />
@@ -55,44 +55,46 @@ function App() {
             <Video />
           </div>
         </div>
-      </div>
-      <header className="flex py-2 shadow sticky top-0 z-20 bg-white">
-        <nav className="flex flex-grow">
-          <div className="flex items-center ml-auto font-bold">
-            <NavItem>Demos</NavItem>
-            <NavItem className="ml-2">Pages</NavItem>
-            <NavItem className="ml-2">Portofolios</NavItem>
+      </aside>
+      <header className="shadow sticky top-0 z-20 bg-white hidden lg:block">
+        <div className="flex py-2">
+          <nav className="flex flex-grow">
+            <div className="flex items-center ml-auto font-bold">
+              <NavItem>Demos</NavItem>
+              <NavItem className="ml-2">Pages</NavItem>
+              <NavItem className="ml-2">Portofolios</NavItem>
+            </div>
+          </nav>
+          <div className="flex-grow" />
+          <div className="flex flex-grow">
+            <img src={cart} />
+            <img className="ml-4" src={search} />
+            <input className="ml-4 p-1 border border-black rounded-md" />
           </div>
-        </nav>
-        <div className="flex-grow" />
-        <div className="flex flex-grow">
-          <img src={cart} />
-          <img className="ml-4" src={search} />
-          <input className="ml-4 p-1 border border-black rounded-md" />
         </div>
       </header>
       <div className="mt-1 bg-white shadow-lg">
         <div className="relative">
           <img src="https://images.unsplash.com/photo-1564697366559-f2b400ce529a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440q=80" />
           <div className="absolute inset-0 bg-opacity-30 bg-black text-white flex flex-col items-center">
-            <div className="mt-10 w-1/2">
-              <div className="text-4xl font-dancing">
+            <div className="mt-5 lg:mt-10 lg:w-1/2">
+              <div className="lg:text-4xl font-dancing">
                 Catering should be an experience
               </div>
-              <div className="mt-4 text-5xl font-bold">
+              <div className="mt-2 lg:mt-4 lg:text-5xl font-bold">
                 We use only the finest and freshest ingredients
               </div>
-              <div className="mt-8 text-lg font-bold">
+              <div className="mt-2 lg:mt-8 lg:text-lg">
                 At Sway catering we know that food is an important part of life. If the meal is not perfect, your event cannot be perfect
               </div>
-              <button className="mt-8 bg-green-500 py-2 px-4 rounded-full flex items-center mx-auto">
+              <button className="mt-4 lg:mt-8 bg-green-500 py-2 px-4 rounded-full flex items-center mx-auto">
                 Request a quote
                 <Right />
               </button>
             </div>
           </div>
         </div>
-        <div className="w-1/2 pb-4 flex flex-col items-center mx-auto text-gray-500 mt-8">
+        <div className="px-2 lg:px-0 lg:w-1/2 pb-4 flex flex-col items-center mx-auto text-gray-500 mt-8">
           <div className="font-dancing text-3xl">
             Catering service in New York
           </div>
