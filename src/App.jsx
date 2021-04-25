@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <header className="flex py-2 shadow sticky top-0 z-20 bg-white">
         <nav className="flex flex-grow">
-          <div className="flex ml-auto font-bold">
+          <div className="flex items-center ml-auto font-bold">
             <NavItem>Demos</NavItem>
             <NavItem className="ml-2">Pages</NavItem>
             <NavItem className="ml-2">Portofolios</NavItem>
@@ -44,7 +44,7 @@ function App() {
         <div className="flex flex-grow">
           <img src={cart} />
           <img className="ml-4" src={search} />
-          <input className="ml-4 border border-black rounded-md" />
+          <input className="ml-4 p-1 border border-black rounded-md" />
         </div>
       </header>
       <div className="mt-1 bg-white shadow-lg">
