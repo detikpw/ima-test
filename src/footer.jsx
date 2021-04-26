@@ -3,6 +3,7 @@ import PortfolioItem from './portfolio-item';
 import Cube from "./cube";
 import Command from "./command";
 import Feather from "./feather";
+import ThumbsUp from "./thumbs-up";
 
 const portfolioItems = [
   {
@@ -23,7 +24,7 @@ const portfolioItems = [
       "Donec ullamcorper sollicitudin augue, sed venenatis nulla suscipit in.",
   },
   {
-    icon: <Cube size={96} />,
+    icon: <ThumbsUp size={96} />,
     label: "Promote",
     description:
       "Nunc scelerisque lacinia orci non ultrices. Maecenas molestie rhoncus felis, ut tincidunt odio pretium in",

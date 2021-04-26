@@ -27,7 +27,7 @@ function App() {
               <div className="mt-2 lg:mt-4 lg:text-5xl font-bold">
                 We use only the finest and freshest ingredients
               </div>
-              <div className="mt-2 lg:mt-8 lg:text-lg">
+              <div className="mt-2 lg:mt-8 lg:text-lg leading-none lg:leading-normal">
                 At Sway catering we know that food is an important part of life.
                 If the meal is not perfect, your event cannot be perfect
               </div>
