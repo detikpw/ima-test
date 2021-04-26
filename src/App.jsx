@@ -11,6 +11,7 @@ import Command from "./command";
 import Feather from "./feather";
 import Menu from "./menu";
 import SideNav from "./side-nav";
+import Wave from './wave';
 
 const portfolioItems = [
   {
@@ -95,6 +96,9 @@ function App() {
                 <Right />
               </button>
             </div>
+          </div>
+          <div className="absolute -bottom-px left-0 right-0 h-24">
+            <Wave />
           </div>
         </div>
         <div className="px-2 lg:px-0 lg:w-1/2 pb-4 flex flex-col items-center mx-auto text-gray-500 mt-8">
