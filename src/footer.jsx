@@ -33,7 +33,7 @@ const footer = () => (
       <div className="flex lg:w-2/12 text-white text-lg bg-gray-700 items-center justify-center italic">
         My Portofolios
       </div>
-      <div className="flex flex-wrap lg:w-6/12 px-8 content-start justify-center text-left">
+      <div className="max-w-screen-md flex flex-wrap lg:w-6/12 px-8 content-start justify-center text-left">
         {portfolioItems.map((item) => (
           <PortfolioItem {...item} key={item.label} />
         ))}
