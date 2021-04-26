@@ -10,7 +10,6 @@ $ npm install
 # Jalankan service Untuk development
 $ npm run dev
 
-
 # Jalankan service untuk production
 $ npm run build
 $ npm run serve
