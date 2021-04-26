@@ -1,9 +1,6 @@
 import React from "react";
 import PortfolioItem from './portfolio-item';
-import Cube from "./cube";
-import Command from "./command";
-import Feather from "./feather";
-import ThumbsUp from "./thumbs-up";
+import { Cube, Command, Feather, ThumbsUp } from './icons';
 
 const portfolioItems = [
   {

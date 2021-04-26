@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import "./App.css";
-import Right from "./chevron-right.jsx";
+import { ChevronRight as Right } from "./icons";
 import SideNav from "./side-nav";
 import Wave from './wave';
 import Header from './header';

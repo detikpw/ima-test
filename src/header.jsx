@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import cx from "classnames";
 import NavItem from "./nav-item";
 import search from './search.svg';
-import cart from './cart.svg';
-import Menu from "./menu";
+import { Menu, Cart } from "./icons";
 
 const header = ({ isMenuOpen, toggleMenu }) => (
   <header className="shadow sticky top-0 z-20 bg-white lg:block">
@@ -23,13 +22,15 @@ const header = ({ isMenuOpen, toggleMenu }) => (
       </nav>
       <div className="flex-grow" />
       <div
-        className={cx("lg:flex flex-grow justify-end lg:justify-start", {
+        className={cx("lg:flex items-center flex-grow justify-end lg:justify-start", {
           hidden: isMenuOpen,
           flex: !isMenuOpen,
         })}
       >
         <img src={search} />
-        <img className="ml-2" src={cart} />
+        <div className="ml-2">
+          <Cart />
+        </div>
         <input className="hidden lg:block ml-4 p-1 border border-black rounded-md" />
       </div>
       <button className="px-4 lg:hidden" onClick={toggleMenu}>
