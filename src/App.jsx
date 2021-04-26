@@ -125,7 +125,7 @@ function App() {
               <PortfolioItem {...item} key={item.label} />
             ))}
           </div>
-          <div className="p-4 bg-alt-1 lg:w-4/12 text-left">
+          <div className="flex flex-col p-4 bg-alt-1 lg:w-4/12 text-left">
             <div className=" text-red-500">Services</div>
             <p className="mt-6 text-sm">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -154,6 +154,9 @@ function App() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
+            <span className="mt-auto text-red-500 text-xs">
+              cover <a href="https://unsplash.com/photos/cdRUE5bHCGc">photo</a> by <a href="https://unsplash.com/@natejohnston">Nate Johnston</a> and icon from <a href="https://feathericons.com/">Feather Icons</a>
+            </span>
           </div>
         </div>
       </footer>
